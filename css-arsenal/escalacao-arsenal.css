@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navegacao ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.navegacao ul li {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+  margin-top: -85px;
+}
+
+.navegacao ul li:hover {
+  background: none;
+}
+
+.navegacao a {
+  color: #082b4b;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.navegacao a:hover {
+  background-color: #f2d27a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navegacao a.ativo {
+  color: #0d3b66;
+}
+
+.icone {
+  display: flex;
+  justify-content: left;
+  margin-top: -10px;
+  height: 140px;
+  width: auto;
+  margin-left: 60px;
+}
+.escalacao {
+  width: 100%;
+  min-height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 80px 40px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+    url("./img/campo.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* OVERLAY */
+
+.overlay {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  backdrop-filter: blur(2px);
+}
+
+/* TÍTULO */
+
+.titulo-escalacao {
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.titulo-escalacao span {
+  background: #d90429;
+
+  color: white;
+
+  padding: 10px 20px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  letter-spacing: 2px;
+}
+
+.titulo-escalacao h1 {
+  color: white;
+
+  font-size: 60px;
+
+  margin-top: 25px;
+}
+
+.titulo-escalacao p {
+  color: #d1d5db;
+
+  margin-top: 10px;
+
+  font-size: 22px;
+}
+
+/* CAMPO */
+
+.campo {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 60px;
+}
+
+/* LINHAS */
+
+.linha {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* JOGADORES */
+
+.jogador {
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.jogador:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.jogador img {
+  width: 120px;
+  height: 120px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 4px solid rgba(255, 255, 255, 0.15);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.jogador h3 {
+  color: white;
+
+  margin-top: 12px;
+
+  font-size: 20px;
+}
+
+/* GOLEIRO */
+
+.goleiro img {
+  border: 4px solid #f0c14b;
+}
