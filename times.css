@@ -579,3 +579,95 @@ input {
     font-size: 12px;
   }
 }
+
+.footer {
+  background: #f8fafc; /* fundo claro */
+  color: #0b1428;
+  margin-top: 80px;
+  padding: 50px 20px 20px;
+  border-top: 3px solid #be8f1c;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* LADO ESQUERDO */
+.footer-left {
+  max-width: 420px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #be8f1c;
+  margin-bottom: 12px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* LADO DIREITO */
+.footer-right {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-right h4 {
+  font-size: 20px;
+  color: #18223a;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.footer-right h4::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #be8f1c;
+  margin-top: 6px;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-right li {
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.footer-right li:hover {
+  color: #142750;
+  transform: translateX(4px);
+}
+
+/* BOTTOM */
+.footer-bottom {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 12px;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+}
