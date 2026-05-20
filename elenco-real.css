@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* NAV */
+
+.navegacao ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navegacao ul li {
+  margin-top: -85px;
+}
+
+.navegacao a {
+  color: #082b4b;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.navegacao a:hover {
+  background-color: #f2d27a;
+  color: white;
+}
+
+.icone {
+  display: flex;
+  margin-top: 10px;
+  height: 140px;
+  margin-left: 60px;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+
+  background-image: url("./img-real-madrid/santiago.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.92) 12%,
+    rgba(255, 255, 255, 0.72) 32%,
+    rgba(255, 255, 255, 0.2) 52%,
+    rgba(255, 255, 255, 0) 72%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 90px;
+}
+
+.club-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.club-logo {
+  width: 95px;
+}
+
+.text h1 {
+  font-size: 72px;
+  color: #081f44;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.text p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #444;
+  letter-spacing: 4px;
+}
+.stats {
+  display: flex;
+  gap: 65px;
+  margin-top: 50px;
+}
+
+.stat h3 {
+  color: #081f44;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.stat span {
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 2px;
+}
+.menu-times {
+  background-color: white;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-times ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 60px;
+}
+
+.menu-times a {
+  text-decoration: none;
+
+  color: #c9a227;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  transition: 0.3s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menu-times a:hover {
+  color: #0d3b66;
+}
+
+.elenco {
+  padding: 50px 70px;
+}
+
+.elenco h2 {
+  color: #082b4b;
+
+  font-size: 40px;
+
+  margin-bottom: 25px;
+}
+
+.tabela-elenco {
+  background-color: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.topo-tabela {
+  background-color: #082b4b;
+
+  color: white;
+
+  display: grid;
+
+  grid-template-columns: 1fr 3fr 2fr 2fr;
+
+  padding: 20px;
+
+  font-weight: bold;
+}
+
+.jogador {
+  display: grid;
+
+  grid-template-columns: 1fr 3fr 2fr 2fr;
+
+  padding: 20px;
+
+  border-bottom: 1px solid #eee;
+
+  transition: 0.3s;
+}
+
+.jogador:hover {
+  background-color: #f8f8f8;
+}
+
+.jogador span:first-child {
+  color: #c9a227;
+
+  font-weight: bold;
+}
