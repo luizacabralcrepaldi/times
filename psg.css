@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navegacao ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.navegacao ul li {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+  margin-top: -85px;
+}
+
+.navegacao ul li:hover {
+  background: none;
+}
+
+.navegacao a {
+  color: #082b4b;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.navegacao a:hover {
+  background-color: #03569b;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navegacao a.ativo {
+  color: #0d3b66;
+}
+
+.icone {
+  display: flex;
+  justify-content: left;
+  margin-top: -10px;
+  height: 140px;
+  width: auto;
+  margin-left: 60px;
+}
+
+.banner-time {
+  width: 100%;
+  height: 300px;
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 25%,
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("img-psg/PSG-Nantes_Parc_des_Princes_05.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.conteudo-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 150px;
+}
+.conteudo-banner img {
+  width: 100px;
+  height: auto;
+}
+.conteudo-banner h1 {
+  font-size: 48px;
+  color: rgb(3, 56, 126);
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.conteudo-banner p {
+  font-size: 18px;
+  color: #1f68ac;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.stats {
+  display: flex;
+  gap: 65px;
+  margin-top: 50px;
+}
+
+.stat h3 {
+  color: #081f44;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.stat span {
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 2px;
+}
+.menu-times {
+  background-color: white;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-times ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 60px;
+}
+
+.menu-times a {
+  text-decoration: none;
+
+  color: #0d3f8a;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  transition: 0.3s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menu-times a:hover {
+  color: #c0af1a;
+}
+
+.conteudo-principal {
+  display: flex;
+  gap: 40px;
+
+  padding: 50px 70px;
+}
+
+.lado-esquerdo {
+  flex: 2;
+}
+
+.lado-esquerdo h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.lado-direito {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.lado-direito h2 {
+  color: #082b4b;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.lado-direito p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.lado-direito ul {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.titulo-secao {
+  margin-bottom: 20px;
+
+  color: #082b4b;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+
+  transition: 0.5s;
+}
+
+.slide {
+  width: 33.3%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+
+.texto-slide {
+  position: absolute;
+
+  bottom: 30px;
+  left: 30px;
+
+  color: white;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.texto-slide span {
+  font-size: 14px;
+}
+
+.texto-slide h3 {
+  width: 70%;
+
+  margin-top: 10px;
+
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+input {
+  display: none;
+}
+
+.navegacao-carrossel {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 15px;
+}
+
+.bar {
+  width: 12px;
+  height: 12px;
+
+  background-color: #d3d3d3;
+
+  border-radius: 50%;
+
+  margin: 5px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.bar:hover {
+  background-color: #c9a227;
+}
+
+#slide1:checked ~ .slides {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .slides {
+  margin-left: -100%;
+}
+
+#slide3:checked ~ .slides {
+  margin-left: -200%;
+}
+
+.noticias {
+  margin-top: 50px;
+}
+
+.card-noticia {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  background-color: white;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-noticia img {
+  width: 170px;
+  height: 100px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.card-noticia h3 {
+  font-size: 20px;
+  color: #092742;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.card-noticia a {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  color: #1f68ac;
+
+  padding: 14px 28px;
+
+  border-radius: 40px;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  transition: 0.3s;
+}
+
+.card-noticia a:hover {
+  color: rgb(48, 142, 230);
+}
+
+.card-lateral {
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.jogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  margin: 30px 0;
+}
+
+.jogo img {
+  width: 80px;
+}
+
+.jogo span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card-lateral a {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 12px;
+
+  background-color: #c9a227;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.card-lateral a:hover {
+  background-color: #082b4b;
+}
+
+.artilheiros {
+  list-style: none;
+
+  margin-top: 25px;
+}
+
+.artilheiros li {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+  font-size: 18px;
+}
+.footer {
+  background: #f8fafc; /* fundo claro */
+  color: #0b1428;
+  margin-top: 80px;
+  padding: 50px 20px 20px;
+  border-top: 3px solid #be8f1c;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* LADO ESQUERDO */
+.footer-left {
+  max-width: 420px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #be8f1c;
+  margin-bottom: 12px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* LADO DIREITO */
+.footer-right {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-right h4 {
+  font-size: 20px;
+  color: #18223a;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.footer-right h4::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #be8f1c;
+  margin-top: 6px;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-right li {
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.footer-right li:hover {
+  color: #142750;
+  transform: translateX(4px);
+}
+
+/* BOTTOM */
+.footer-bottom {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 12px;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+}
