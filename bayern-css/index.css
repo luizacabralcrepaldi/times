@@ -118,7 +118,9 @@ body {
   transform: scale(1.05);
 }
 
-
+.hero-image img {
+  width: 480px;
+}
 
 .teams {
   padding: 20px 60px 60px;
@@ -201,7 +203,7 @@ footer {
   color: #c89b3c;
 }
 
-
+/* RESPONSIVO */
 
 @media (max-width: 1000px) {
   .hero {
@@ -240,10 +242,4 @@ footer {
   .hero-text h1 {
     font-size: 40px;
   }
-
-  footer {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
 
