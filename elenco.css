@@ -108,7 +108,7 @@
   display: flex;
   gap: 65px;
   margin-top: 50px;
-  
+
 }
 
 .stat h3 {
@@ -268,4 +268,30 @@
     flex-direction: column;
 
     gap: 12px;
+}
+
+/* LINKS GERAIS */
+
+.footer a{
+    text-decoration: none;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.footer a:hover{
+    color: #c9a227;
+}
+
+/* COPYRIGHT */
+
+.footer-copy{
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    font-size: 14px;
 }
