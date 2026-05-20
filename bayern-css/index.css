@@ -118,9 +118,6 @@ body {
   transform: scale(1.05);
 }
 
-.hero-image img {
-  width: 480px;
-}
 
 .teams {
   padding: 20px 60px 60px;
@@ -242,4 +239,4 @@ footer {
   .hero-text h1 {
     font-size: 40px;
   }
-
+}
