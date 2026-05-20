@@ -75,7 +75,7 @@ body {
     linear-gradient(
       to right,
       rgba(255, 255, 255, 0.95) 5%,
-      rgba(255, 255, 255, 0.2)
+      rgba(151, 141, 141, 0.2)
     ),
     url("https://images.pexels.com/photos/9251066/pexels-photo-9251066.jpeg");
 
@@ -90,12 +90,12 @@ body {
 }
 .info h1 {
   font-size: 55px;
-  color: #d60000;
+  color: #f2d27a;
   font-family: Arial, Helvetica, sans-serif;
 }
 .info h2 {
   font-size: 28px;
-  color: #d60000;
+  color: #f2d27a;
   margin-bottom: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -689,102 +689,96 @@ button:hover {
   font-weight: bold;
 }
 .footer {
-  width: 100%;
-
-  background: #080808;
-
-  padding-top: 60px;
-
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc; /* fundo claro */
+  color: #0b1428;
+  margin-top: 80px;
+  padding: 50px 20px 20px;
+  border-top: 3px solid #be8f1c;
 }
 
-.footer-content {
-  width: 100%;
+.footer-inner {
   max-width: 1200px;
-
-  margin: auto;
+  margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
-  gap: 40px;
-
-  padding: 0 40px 50px;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
-/* LOGO */
-
-.footer-logo img {
-  width: 90px;
-  margin-bottom: 15px;
+/* LADO ESQUERDO */
+.footer-left {
+  max-width: 420px;
 }
 
-.footer-logo h2 {
-  color: white;
-  margin-bottom: 10px;
-}
-
-.footer-logo p {
-  color: #999;
-}
-
-/* LINKS */
-
-.footer-links,
-.footer-social {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-links h3,
-.footer-social h3 {
-  color: white;
-  margin-bottom: 20px;
-}
-
-.footer-links a,
-.footer-social a {
-  color: #999;
-
-  text-decoration: none;
-
+.footer-logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #be8f1c;
   margin-bottom: 12px;
-
-  transition: 0.3s;
 }
 
-.footer-links a:hover,
-.footer-social a:hover {
-  color: #d60000;
-}
-
-/* COPYRIGHT */
-
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-
-  padding: 25px;
-
-  text-align: center;
-}
-
-.footer-bottom p {
-  color: #777;
+.footer-left p {
   font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
 }
-/* ===== PALETA PRINCIPAL =====
 
-VERMELHO: #d90429
-AZUL ESCURO: #0b132b
-AZUL MÉDIO: #1c2541
-DOURADO: #f0c14b
-BRANCO: #f8f9fa
+/* LADO DIREITO */
+.footer-right {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
 
-*/
+.footer-right h4 {
+  font-size: 20px;
+  color: #18223a;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  position: relative;
+}
 
-/* BODY */
+.footer-right h4::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #be8f1c;
+  margin-top: 6px;
+}
 
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-right li {
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.footer-right li:hover {
+  color: #142750;
+  transform: translateX(4px);
+}
+
+/* BOTTOM */
+.footer-bottom {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 12px;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+}
 body {
   background: #f4f6f8;
   color: #111;
@@ -792,31 +786,14 @@ body {
 
 /* NAVBAR */
 
-.navegacao {
-  background: linear-gradient(to right, #0b132b, #1c2541);
-}
-
-.navegacao a {
-  color: #f8f9fa;
-}
-
-.navegacao a:hover {
-  background: linear-gradient(to right, #d90429, #ef233c);
-  color: white;
-}
-
-.navegacao a.ativo {
-  color: #f0c14b;
-}
-
 /* HERO */
 
 .hero {
   background:
     linear-gradient(
       to right,
-      rgba(11, 19, 43, 0.92) 10%,
-      rgba(11, 19, 43, 0.45)
+      rgba(230, 228, 228, 0.897) 25%,
+      rgba(255, 255, 255, 0.2)
     ),
     url("https://images.pexels.com/photos/9251066/pexels-photo-9251066.jpeg");
 
@@ -837,7 +814,8 @@ body {
 }
 
 .info li p {
-  color: #d6d6d6;
+  color: #504e4e;
+  font-weight: 1000px;
 }
 
 /* MENU TIMES */
@@ -1027,23 +1005,4 @@ button:hover {
 
 .vs {
   color: #d90429;
-}
-
-/* FOOTER */
-
-.footer {
-  background: linear-gradient(to right, #05070f, #0b132b);
-}
-
-.footer-links a:hover,
-.footer-social a:hover {
-  color: #f0c14b;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.footer-bottom p {
-  color: #9ca3af;
 }

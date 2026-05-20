@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 .navegacao ul {
   list-style: none;
   display: flex;
@@ -63,145 +55,345 @@ body {
   width: auto;
   margin-left: 60px;
 }
-.escalacao {
-  width: 100%;
-  min-height: 100vh;
 
-  position: relative;
+.banner-time {
+  width: 100%;
+  height: 300px;
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 25%,
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("https://s2-ge.glbimg.com/bwCPcbJmutqLUzRd7-BpbAN75hk=/0x0:1366x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2018/n/J/bV06bqQ7Cvp0Na769ObA/bayern2.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.conteudo-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 150px;
+}
+.conteudo-banner img {
+  width: 100px;
+  height: auto;
+}
+.conteudo-banner h1 {
+  font-size: 48px;
+  color: rgb(202, 30, 30);
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.conteudo-banner p {
+  font-size: 18px;
+  color: #1f68ac;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.stats {
+  display: flex;
+  gap: 65px;
+  margin-top: 50px;
+}
+
+.stat h3 {
+  color: #081f44;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.stat span {
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 2px;
+}
+.menu-times {
+  background-color: white;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-times ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 60px;
+}
+
+.menu-times a {
+  text-decoration: none;
+
+  color: #c9a227;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  transition: 0.3s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menu-times a:hover {
+  color: #0d3b66;
+}
+
+.elenco {
+  padding: 50px 70px;
+}
+
+.elenco h2 {
+  color: #082b4b;
+
+  font-size: 40px;
+
+  margin-bottom: 25px;
+
+  font-family: "Franklin", "Arial Narrow", Arial, sans-serif;
+}
+
+.tabela-elenco {
+  background-color: white;
+
+  border-radius: 20px;
 
   overflow: hidden;
 
-  padding: 80px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
 
-  font-family: Arial, Helvetica, sans-serif;
+.topo-tabela {
+  background-color: #082b4b;
+
+  color: white;
+
+  display: grid;
+
+  grid-template-columns: 1fr 3fr 2fr 2fr;
+
+  padding: 20px;
+
+  font-weight: bold;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.jogador {
+  display: grid;
+
+  grid-template-columns: 1fr 3fr 2fr 2fr;
+
+  padding: 20px;
+
+  border-bottom: 1px solid #eee;
+
+  transition: 0.3s;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.jogador:hover {
+  background-color: #f8f8f8;
+}
+
+.jogador span:first-child {
+  color: #c9a227;
+
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #082b4b;
+
+  margin-top: 80px;
+
+  color: white;
+}
+
+/* CONTEÚDO */
+
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  padding: 40px 70px;
+}
+
+/* LOGO */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.footer-logo img {
+  width: 70px;
+}
+
+.footer-logo h2 {
+  font-size: 28px;
+}
+
+/* LINKS */
+
+.footer-links,
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.banner-time {
+  width: 100%;
+  min-height: 300px;
 
   background:
-    linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
-    url("./img/campo.jpg");
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.95) 25%,
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("https://images.pexels.com/photos/9251066/pexels-photo-9251066.jpeg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 40px 80px;
+}
+
+.conteudo-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.conteudo-banner img {
+  width: 100px;
+}
+
+.conteudo-banner h1 {
+  font-size: 48px;
+  color: #ca1e1e;
+  font-weight: bold;
+}
+
+.conteudo-banner p {
+  font-size: 18px;
+  color: #1f68ac;
+}
+
+/* STATS */
+
+.stats {
+  display: flex;
+  gap: 60px;
+}
+
+.stat h3 {
+  color: #081f44;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.stat span {
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 2px;
+}
+/* ===== BANNER ===== */
+
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(230, 228, 228, 0.897) 25%,
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("https://images.pexels.com/photos/9251066/pexels-photo-9251066.jpeg");
 
   background-size: cover;
   background-position: center;
 }
 
-/* OVERLAY */
+/* ESCUDO */
 
-.overlay {
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
-
-  top: 0;
-  left: 0;
-
-  backdrop-filter: blur(2px);
+.escudo img {
+  width: 200px;
 }
 
-/* TÍTULO */
+/* TEXTO DO BANNER */
 
-.titulo-escalacao {
-  position: relative;
-
-  z-index: 2;
-
-  text-align: center;
-
-  margin-bottom: 70px;
+.info {
+  margin-left: 50px;
 }
 
-.titulo-escalacao span {
-  background: #d90429;
-
-  color: white;
-
-  padding: 10px 20px;
-
-  border-radius: 30px;
-
-  font-size: 14px;
-
-  letter-spacing: 2px;
+.info h1 {
+  font-size: 55px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.titulo-escalacao h1 {
-  color: white;
-
-  font-size: 60px;
-
-  margin-top: 25px;
+.info h2 {
+  font-size: 28px;
+  color: #f0c14b;
+  margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.titulo-escalacao p {
-  color: #d1d5db;
+/* LISTA DE INFORMAÇÕES */
 
-  margin-top: 10px;
-
-  font-size: 22px;
-}
-
-/* CAMPO */
-
-.campo {
-  position: relative;
-
-  z-index: 2;
-
+.info ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  gap: 40px;
+}
+
+.info li {
+  display: flex;
   align-items: center;
-
-  gap: 60px;
+  gap: 12px;
 }
 
-/* LINHAS */
-
-.linha {
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  gap: 60px;
+.info li img {
+  width: 40px;
 }
 
-/* JOGADORES */
-
-.jogador {
-  text-align: center;
-
-  transition: 0.3s;
-}
-
-.jogador:hover {
-  transform: translateY(-10px) scale(1.05);
-}
-
-.jogador img {
-  width: 120px;
-  height: 120px;
-
-  object-fit: cover;
-
-  border-radius: 50%;
-
-  border: 4px solid rgba(255, 255, 255, 0.15);
-
-  background: rgba(255, 255, 255, 0.08);
-
-  backdrop-filter: blur(10px);
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-}
-
-.jogador h3 {
+.info li strong {
+  display: block;
+  font-size: 18px;
   color: white;
-
-  margin-top: 12px;
-
-  font-size: 20px;
 }
 
-/* GOLEIRO */
-
-.goleiro img {
-  border: 4px solid #f0c14b;
+.info li p {
+  font-size: 14px;
+  color: #504e4e;
+  font-weight: 400;
 }
