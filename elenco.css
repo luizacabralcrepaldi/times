@@ -99,6 +99,29 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+
+
+
+
+
+.stats {
+  display: flex;
+  gap: 65px;
+  margin-top: 50px;
+  
+}
+
+.stat h3 {
+  color: #081f44;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.stat span {
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 2px;
+}
 .menu-times {
   background-color: white;
 
